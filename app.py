@@ -19,7 +19,7 @@ sepal_length = form.number_input(
     
     "sepal_length (cm)",
     min_value = 4.0,
-    max_value = 8.0
+    max_value = 8.0,
     value = 5.1                            
                                 
  )
@@ -29,7 +29,7 @@ petal_length = form.number_input(
     
     "petal_length (cm)",
     min_value = 1.0,
-    max_value = 7.0
+    max_value = 7.0,
     value = 5.0                            
                                 
  )
@@ -40,7 +40,7 @@ sepal_width = form.number_input(
     
     "sepal_width (cm)",
     min_value = 1.0,
-    max_value = 4.5
+    max_value = 4.5,
     value = 4.0                            
                                 
  )
@@ -51,7 +51,7 @@ petal_width = form.number_input(
     
     "petal_width (cm)",
     min_value = 0.1,
-    max_value = 2.5
+    max_value = 2.5,
     value = 0.2                            
                                 
  )
@@ -72,4 +72,5 @@ prediction = model.predict(input_data)
 
 
 st.subheader("Prediction Result")
+
 st.success(f"Predicted species: {prediction[0]}")
